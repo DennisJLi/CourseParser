@@ -22,7 +22,7 @@ public class CourseParser {
 
       }
       else {
-         File f = new File("resources/webpages/cpe.htm");
+         File f = new File("src/main/resources/webpages/cpe.htm");
          try {
             Document doc = Jsoup.parse(f, "UTF-8");
             DepartmentCatalogParser.parseDocument(doc);
